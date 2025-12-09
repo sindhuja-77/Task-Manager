@@ -1,0 +1,139 @@
+/* Reset & base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #33ccff 0%, #ff99cc 60%);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+div {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.3);
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction:column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex: 1;
+  background:rgba(255,255,255,0.6);
+  padding: 10px 15px;
+  border: 1.2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #999;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  background: #8441A4;
+  border: 1.5px solid #bbb;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  border-color: #999;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255,255,255,0.6);
+  margin-bottom: 12px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+li span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #999;
+  font-style: italic;
+}
+
+li input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+li button {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border: 1.2px solid #ccc;
+  background: transparent;
+  color: #333;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+li button:hover {
+  border-color: #999;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.recommendation-container {
+  margin-top: 20px;
+}
+
+.recommendation-box {
+  background-color: #f0f4f8;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  white-space: pre-line;
+}
+
+.recommendation-box p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
